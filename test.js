@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Establish a server-sent events connection
-    let eventSource = new EventSource("http://192.168.1.104/");
+    let eventSource = new EventSource("https://192.168.1.104/");
     // Event listener for server-sent events
     eventSource.onmessage = function(event) {
         displaySensorData(event.reading);
